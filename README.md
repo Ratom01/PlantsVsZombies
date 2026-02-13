@@ -12,7 +12,7 @@ Böngészőben futtatható játék, ami a "Plants vs Zombies" alapján készült
 - failure 2 - freesound_community
 
 ### Képek:
-#### Chatgpt által generált kép
+- Chatgpt által generált kép
 - https://se.pinterest.com/pin/691935930263366413/
 - https://hu.pinterest.com/pin/724305552567254576/
 - https://www.pixilart.com/art/avocado-seed-projectile-sr2d61e88013d6e
