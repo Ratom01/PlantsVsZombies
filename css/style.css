@@ -1,0 +1,246 @@
+#game-board{
+    width: 1200px;
+    height: 800px;
+    font-family: "Berlin Sans FB";
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    img{
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.enemy {
+    position: absolute;
+}
+.plant-box {
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    top: 10px;
+    z-index: 4;
+    img{
+        display: block;
+        position: absolute;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.plants{
+    position: absolute;
+    z-index: 4;
+}
+.places{
+    position: absolute;
+    width: 112px;
+    height: 123px;
+    /*background: green;*/
+    /*border: 1px solid black;*/
+    text-align: center;
+    horiz-align: center;
+    vertical-align: middle;
+    z-index: 3;
+}
+.projectile{
+    position: absolute;
+    z-index: 4;
+}
+.menu{
+    position: absolute;
+    display: flex;
+    left: calc(50% - 150px);
+    top: calc(50% - 250px);
+    width: 300px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    background-color: rgba(255,255,255);
+    z-index: 5;
+}
+.button{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px black;
+    text-align: center;
+    vertical-align: center;
+    z-index: 5;
+}
+.level-selector{
+    position: absolute;
+    display: flex;
+    left: calc(50% - 150px);
+    top: calc(50% - 100px);
+    width: 300px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    background-color: rgba(255,255,255);
+    z-index: 5;
+}
+.level-selector-header{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+.level-selector-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    z-index: 5;
+}
+.level-selector-footer{
+    width: 70px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    background-color: lightgreen;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px black;
+    cursor: pointer;
+    /*transition: background-color 0.3s, opacity 0.3s;*/
+    z-index: 5;
+}
+.level {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px black;
+    border: 2px solid black;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.button-hover:hover {
+    background-color: red;
+    cursor: pointer;
+    scale: 120%;
+    opacity: 0.8;
+    z-index: 5;
+}
+.victory{
+    position: absolute;
+    display: flex;
+    left: calc(50% - 150px);
+    top: calc(50% - 150px);
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    background-color: rgba(255,255,255);
+    z-index: 5;
+}
+.defeat{
+    position: absolute;
+    display: flex;
+    left: calc(50% - 150px);
+    top: calc(50% - 150px);
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    background-color: rgba(255,255,255);
+    z-index: 5;
+}
+.volume-box{
+    position: absolute;
+    display: flex;
+    left: calc(50% - 150px);
+    top: calc(50% - 150px);
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    background-color: rgba(255,255,255);
+    z-index: 5;
+    .volume-text{
+        margin-right: 15px;
+    }
+}
+.gray-screen{
+    display: flex;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    background: gray;
+    opacity: 0.5;
+    z-index: 10;
+    cursor: context-menu;
+}
+.neptun{
+    display: block;
+    position: absolute;
+    color: red;
+    font-size: 25px;
+    text-shadow: 1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;
+    bottom:15px;
+    right:5px;
+    z-index: 15;
+}
+.point{
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    text-shadow: 1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;
+    top:5px;
+    right:10px;
+    z-index: 15;
+}
+.tutorial{
+    position: absolute;
+    display: flex;
+    left: calc(50% - 250px);
+    top: calc(50% - 225px);
+    width: 500px;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    background-color: rgba(255,255,255);
+    z-index: 5;
+    div{
+        margin: 0 20px;
+    }
+}
+.base-div{
+    border: 5px solid black;
+    border-radius: 25px;
+    background: saddlebrown;
+}
