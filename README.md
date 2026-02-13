@@ -2,7 +2,7 @@
 A projekt multimédia 2024/25 tavaszi féléves kurzusra készült. A kód írása webstormban történt és google chromon történt a tesztelés.
 Böngészőben futtatható játék, ami a "Plants vs Zombies" alapján készült. A játék készítéséhez csak egyszerű **javasript** és **html** kód van használva.
 
-## Külső fájlok forrása (tartalmazza a projekt):
+## Külső fájlok forrása:
 
 ### Audió fájlok:
 #### https://pixabay.com/ (cím - feltöltő)
